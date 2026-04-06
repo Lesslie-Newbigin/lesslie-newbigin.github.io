@@ -141,14 +141,17 @@ RST| GPIO 4
 
 🚀 Getting Started
 
-1. Install Arduino IDE / PlatformIO
-2. Install libraries:
-   - MFRC522
-   - ESP32 BLE
-3. Select:
-   - ESP32 Dev Module
-   - Huge APP Partition
-4. Upload firmware
+ANDROID 
+1. INSTALL ESP32 FLASHER APP FROM ANY APP STORE 
+2. SELECT THE CORRECT OFFSET FILES
+     |
+     |
+     ————–
+           Bootloader-0x1000
+      Partition Table-0x8000
+         App Firmware-0x10000
+3. flash the esp32
+(in some esp32 we need to hold boot button till flashing complete)
 
 ---
 
