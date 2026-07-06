@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Page Not Found</title>
+<meta name="description" content="Page not found — Lesslie Newbigin portfolio.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="netCanvas" class="net-canvas" aria-hidden="true"></canvas>
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__logo"><span class="nav__logo-bracket">&lt;</span>LN<span class="nav__logo-bracket">/&gt;</span></a>
+  <nav class="nav__links" id="navLinks">
+    <a href="index.html" class="nav__link ">Home</a>
+    <a href="about.html" class="nav__link ">About</a>
+    <a href="expertise.html" class="nav__link ">Expertise</a>
+    <a href="certificates.html" class="nav__link ">Certificates</a>
+    <a href="contact.html" class="nav__link ">Contact</a>
+  </nav>
+  <a href="Lesslie_Newbigin_Resume.pdf" class="nav__cta" download><span>Resume</span></a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<main>
+  <section class="error-page">
+    <p class="error-page__code">404</p>
+    <h1 class="error-page__title">Connection Not Found</h1>
+    <p class="error-page__desc">The page you're looking for was moved, renamed, or never existed on this network. Let's get you back to a known route.</p>
+    <a href="index.html" class="btn btn--primary"><span>Return Home</span>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+</main>
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Lesslie Newbigin. Built with intent — no frameworks, just code.</p>
+  <div class="footer__social">
+    <a href="https://instagram.com/itzz.lesslie" target="_blank" rel="noopener">Instagram</a>
+    <a href="mailto:lesslie.cysec@gmail.com">Email</a>
+    <a href="#" class="footer__top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top ↑</a>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

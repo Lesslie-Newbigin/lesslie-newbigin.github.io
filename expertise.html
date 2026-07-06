@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expertise — Lesslie Newbigin</title>
+<meta name="description" content="Skills, tools, and security projects by Lesslie Newbigin.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="netCanvas" class="net-canvas" aria-hidden="true"></canvas>
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__logo"><span class="nav__logo-bracket">&lt;</span>LN<span class="nav__logo-bracket">/&gt;</span></a>
+  <nav class="nav__links" id="navLinks">
+    <a href="index.html" class="nav__link ">Home</a>
+    <a href="about.html" class="nav__link ">About</a>
+    <a href="expertise.html" class="nav__link active">Expertise</a>
+    <a href="certificates.html" class="nav__link ">Certificates</a>
+    <a href="contact.html" class="nav__link ">Contact</a>
+  </nav>
+  <a href="Lesslie_Newbigin_Resume.pdf" class="nav__cta" download><span>Resume</span></a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<main>
+  <div class="page-hero">
+    <p class="eyebrow eyebrow--muted reveal">02 / EXPERTISE</p>
+    <h1 class="page-hero__title reveal">Skills &amp; Projects</h1>
+    <p class="page-hero__desc reveal">Tools I use, frameworks I apply, and the security projects I've built.</p>
+  </div>
+
+  <section class="section" style="padding-top:0;">
+    <div class="skills__layout">
+      <div class="skills__bars reveal">
+        <div class="skill-bar" data-level="72"><div class="skill-bar__top"><span>Network Security &amp; Protocols</span><span class="skill-bar__pct">72%</span></div><div class="skill-bar__track"><div class="skill-bar__fill"></div></div></div>
+        <div class="skill-bar" data-level="68"><div class="skill-bar__top"><span>Penetration Testing Fundamentals</span><span class="skill-bar__pct">68%</span></div><div class="skill-bar__track"><div class="skill-bar__fill"></div></div></div>
+        <div class="skill-bar" data-level="75"><div class="skill-bar__top"><span>Vulnerability &amp; Traffic Analysis</span><span class="skill-bar__pct">75%</span></div><div class="skill-bar__track"><div class="skill-bar__fill"></div></div></div>
+        <div class="skill-bar" data-level="65"><div class="skill-bar__top"><span>Digital Forensics Concepts</span><span class="skill-bar__pct">65%</span></div><div class="skill-bar__track"><div class="skill-bar__fill"></div></div></div>
+        <div class="skill-bar" data-level="80"><div class="skill-bar__top"><span>Cyber Risk &amp; Fraud Awareness</span><span class="skill-bar__pct">80%</span></div><div class="skill-bar__track"><div class="skill-bar__fill"></div></div></div>
+      </div>
+      <div class="skills__chips reveal">
+        <p class="skills__chips-label">Tools &amp; Environments</p>
+        <div class="filter-row">
+          <button class="filter-pill is-active" data-filter="all">All</button>
+          <button class="filter-pill" data-filter="tools">Tools</button>
+          <button class="filter-pill" data-filter="network">Networking</button>
+          <button class="filter-pill" data-filter="hardware">Hardware</button>
+        </div>
+        <div class="chip-cloud">
+          <span class="chip" data-cat="tools">Kali Linux</span><span class="chip" data-cat="tools">Nmap</span><span class="chip" data-cat="tools">Wireshark</span><span class="chip" data-cat="tools">Burp Suite</span>
+          <span class="chip" data-cat="tools">Linux</span><span class="chip" data-cat="tools">Windows</span><span class="chip" data-cat="network">TCP/IP</span><span class="chip" data-cat="network">DNS</span>
+          <span class="chip" data-cat="network">HTTP</span><span class="chip" data-cat="network">WPA2 / WPA3</span><span class="chip" data-cat="network">NIST CSF</span><span class="chip" data-cat="hardware">ESP32</span>
+        </div>
+        <p class="skills__chips-label skills__chips-label--spaced">Applied Frameworks</p>
+        <div class="framework-strip">
+          <div class="framework-strip__item"><span>Identify</span></div><div class="framework-strip__item"><span>Protect</span></div>
+          <div class="framework-strip__item"><span>Detect</span></div><div class="framework-strip__item"><span>Respond</span></div>
+          <div class="framework-strip__item"><span>Recover</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section__head reveal" style="margin-top:90px;">
+      <p class="eyebrow eyebrow--muted">BUILD LOG</p>
+      <h2 class="section__title">Projects</h2>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card project-card--wide reveal">
+        <div class="project-card__scan"></div>
+        <div class="project-card__top"><span class="project-card__status">TEAM LEAD</span><span class="project-card__tag">Hardware + Security</span></div>
+        <h3>Smart Border Security System <span class="project-card__sub">(SIDP Project)</span></h3>
+        <p>Laser-based virtual fencing concept for detecting unauthorized border intrusion, with sensor integration and automated real-time alerting. Led a team through design, development coordination, and delivery.</p>
+        <ul class="project-card__list">
+          <li>Perimeter security &amp; surveillance system design</li>
+          <li>Real-time breach detection &amp; automated alerts</li>
+          <li>Team coordination across 4+ contributors</li>
+        </ul>
+        <div class="project-card__links">
+          <a href="#" class="link-arrow">GitHub Repository <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#" class="link-arrow">Live Demo <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__scan"></div>
+        <div class="project-card__top"><span class="project-card__status">HACKATHON</span><span class="project-card__tag">Digital Forensics</span></div>
+        <h3>Tamper-Free Evidence System</h3>
+        <p>Concept for tamper-evident digital evidence storage using hashing and verification for reliable chain-of-custody, built for the Kaaval Hackathon.</p>
+        <div class="project-card__links"><a href="#" class="link-arrow">GitHub <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__scan"></div>
+        <div class="project-card__top"><span class="project-card__status">HACKATHON</span><span class="project-card__tag">Identity Systems</span></div>
+        <h3>Digital Twin for Missing Person ID</h3>
+        <p>Digital twin-based identification system matching physical and digital identity data to support faster, more accurate investigation.</p>
+        <div class="project-card__links"><a href="#" class="link-arrow">GitHub <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__scan"></div>
+        <div class="project-card__top"><span class="project-card__status">HACKATHON</span><span class="project-card__tag">Computer Vision</span></div>
+        <h3>AI-Based Traffic Monitoring System</h3>
+        <p>Computer vision workflow concept for vehicle tracking, signal violation detection, and congestion analysis using AI-powered camera systems.</p>
+        <div class="project-card__links"><a href="#" class="link-arrow">GitHub <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      </article>
+
+      <article class="project-card project-card--wide reveal">
+        <div class="project-card__scan"></div>
+        <div class="project-card__top"><span class="project-card__status project-card__status--live">IN PROGRESS</span><span class="project-card__tag">Network Analysis + ESP32</span></div>
+        <h3>CheCore</h3>
+        <p>A personal cybersecurity project combining network analysis software with ESP32 microcontroller hardware — exploring real-world attack scenarios and defense mechanisms through hands-on implementation. Actively evolving.</p>
+        <div class="project-card__links">
+          <a href="#" class="link-arrow">GitHub Repository <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#" class="link-arrow">Follow Progress <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Lesslie Newbigin. Built with intent — no frameworks, just code.</p>
+  <div class="footer__social">
+    <a href="https://instagram.com/itzz.lesslie" target="_blank" rel="noopener">Instagram</a>
+    <a href="mailto:lesslie.cysec@gmail.com">Email</a>
+    <a href="#" class="footer__top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top ↑</a>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

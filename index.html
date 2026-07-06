@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesslie Newbigin — Cybersecurity Student</title>
+<meta name="description" content="Portfolio of Lesslie Newbigin, incoming B.E. Cybersecurity student — Fortinet NSE 3 & COFPS certified.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="netCanvas" class="net-canvas" aria-hidden="true"></canvas>
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__logo"><span class="nav__logo-bracket">&lt;</span>LN<span class="nav__logo-bracket">/&gt;</span></a>
+  <nav class="nav__links" id="navLinks">
+    <a href="index.html" class="nav__link active">Home</a>
+    <a href="about.html" class="nav__link ">About</a>
+    <a href="expertise.html" class="nav__link ">Expertise</a>
+    <a href="certificates.html" class="nav__link ">Certificates</a>
+    <a href="contact.html" class="nav__link ">Contact</a>
+  </nav>
+  <a href="Lesslie_Newbigin_Resume.pdf" class="nav__cta" download><span>Resume</span></a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero__grid"></div>
+    <div class="hero__content">
+      <p class="eyebrow"><span class="status-dot"></span> SYSTEM STATUS: ONLINE</p>
+      <h1 class="hero__name"><span data-split-text>LESSLIE</span><br><span class="hero__name-accent" data-split-text>NEWBIGIN</span></h1>
+      <div class="hero__role"><span class="hero__role-prompt">$</span><span class="hero__role-text" id="typedRole"></span><span class="hero__cursor">_</span></div>
+      <p class="hero__desc">
+        Incoming B.E. Cybersecurity student at CMS College of Engineering &amp; Technology, Coimbatore.
+        Fortinet NSE 3 &amp; COFPS certified — exploring network defense, ethical hacking, and
+        vulnerability assessment through hands-on projects.
+      </p>
+      <div class="hero__actions">
+        <a href="expertise.html" class="btn btn--primary" data-cursor-label="View"><span>View Projects</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="contact.html" class="btn btn--ghost" data-cursor-label="Say hi"><span>Get In Touch</span></a>
+      </div>
+
+      <div class="ascii-portrait">
+        <img src="pencil-portrait.png" alt="Pencil-sketch style portrait of Lesslie Newbigin" loading="lazy">
+        <p class="ascii-portrait__label">pencil_portrait.render()</p>
+      </div>
+
+      <div class="hero__console" role="img" aria-label="Security status console">
+        <div class="console__head">
+          <span class="console__dot console__dot--r"></span><span class="console__dot console__dot--y"></span><span class="console__dot console__dot--g"></span>
+          <span class="console__title">console — secure_profile.sh</span>
+        </div>
+        <div class="console__body" id="consoleBody"></div>
+        <div class="console__live" id="consoleLive"></div>
+      </div>
+    </div>
+    <div class="scroll-cue"><span></span>Scroll</div>
+  </section>
+
+  <section class="section" id="highlights">
+    <div class="section__head reveal">
+      <p class="eyebrow eyebrow--muted">QUICK LINKS</p>
+      <h2 class="section__title">Explore the Site</h2>
+    </div>
+    <div class="project-grid">
+      <a href="about.html" class="project-card reveal">
+        <div class="project-card__scan"></div>
+        <div class="project-card__top"><span class="project-card__tag">Who I Am</span></div>
+        <h3>About</h3>
+        <p>Background, education timeline, and volunteering work in cyber-awareness programs.</p>
+        <span class="link-arrow">Read more <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a href="expertise.html" class="project-card reveal">
+        <div class="project-card__scan"></div>
+        <div class="project-card__top"><span class="project-card__tag">Skills + Projects</span></div>
+        <h3>Expertise</h3>
+        <p>Tools, frameworks, and hands-on security projects including CheCore and hackathon builds.</p>
+        <span class="link-arrow">Explore <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a href="certificates.html" class="project-card reveal">
+        <div class="project-card__scan"></div>
+        <div class="project-card__top"><span class="project-card__tag">Credentials</span></div>
+        <h3>Certificates</h3>
+        <p>Fortinet NSE 3, COFPS, and 10+ certifications from UNITAR and HP.</p>
+        <span class="link-arrow">View all <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a href="contact.html" class="project-card reveal">
+        <div class="project-card__scan"></div>
+        <div class="project-card__top"><span class="project-card__tag">Say Hello</span></div>
+        <h3>Contact</h3>
+        <p>Email and Instagram — open to connecting with the cybersecurity community.</p>
+        <span class="link-arrow">Get in touch <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Lesslie Newbigin. Built with intent — no frameworks, just code.</p>
+  <div class="footer__social">
+    <a href="https://instagram.com/itzz.lesslie" target="_blank" rel="noopener">Instagram</a>
+    <a href="mailto:lesslie.cysec@gmail.com">Email</a>
+    <a href="#" class="footer__top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top ↑</a>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
